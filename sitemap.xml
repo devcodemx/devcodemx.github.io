@@ -2,67 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://www.devcode.mx/scripts/form_check.php</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/scripts/form_throttle.php</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/scripts/form_process.php</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/scripts/form-u101.php</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/images/logoblancotransparentefw.png</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/images/u113-17.png</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/images/u113-17-r.png</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/images/u113-17-m.png</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/images/u113-17-fs.png</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/index.html</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.devcode.mx/contacto.html</loc>
-    <lastmod>2014-09-03</lastmod>
+    <lastmod>2014-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.devcode.mx/privacidad.html</loc>
+    <lastmod>2014-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

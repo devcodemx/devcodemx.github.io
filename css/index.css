@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #00001B;
-	background-color: #89493A;
+	color: #000016;
+	background-color: #FDE465;
 }
 
 .html
@@ -25,27 +25,27 @@
 #u73
 {
 	z-index: 2;
-	padding-bottom: 16px;
+	padding-bottom: 30px;
 }
 
 #u84
 {
 	z-index: 3;
-	width: 256px;
+	width: 426px;
 	margin-right: -10000px;
-	margin-top: 20px;
-	left: 452px;
+	margin-top: 44px;
+	left: 367px;
 }
 
 #u73-bw
 {
 	z-index: 2;
-	height: 276px;
+	height: 470px;
 }
 
 #u91-4
 {
-	z-index: 19;
+	z-index: 25;
 	min-height: 41px;
 	background-color: transparent;
 	line-height: 36px;
@@ -58,16 +58,16 @@
 
 #u91-4-bw
 {
-	z-index: 19;
+	z-index: 25;
 	min-height: 41px;
-	margin-top: 73px;
+	margin-top: 10px;
 	height: 41px;
 }
 
 #u90
 {
 	z-index: 5;
-	padding-bottom: 38px;
+	padding-bottom: 39px;
 }
 
 #u73_align_to_page,#u90_align_to_page
@@ -81,28 +81,28 @@
 #menuu172
 {
 	z-index: 6;
-	width: 150px;
+	width: 298px;
 	margin-right: -10000px;
-	margin-top: 28px;
-	left: 505px;
+	margin-top: 27px;
+	left: 431px;
 }
 
 #u180
 {
-	width: 74px;
+	width: 98px;
 	min-height: 34px;
 	margin-right: -10000px;
 }
 
 #u181
 {
-	width: 74px;
+	width: 98px;
 	padding-bottom: 17px;
 }
 
 #u182-4
 {
-	width: 74px;
+	width: 98px;
 	min-height: 17px;
 	margin-right: -10000px;
 	top: 8px;
@@ -110,32 +110,54 @@
 
 #u173
 {
-	width: 74px;
+	width: 98px;
 	min-height: 34px;
 	margin-right: -10000px;
-	left: 76px;
+	left: 100px;
 }
 
 #u176
 {
-	width: 74px;
+	width: 98px;
 	padding-bottom: 17px;
-}
-
-#u181.MuseMenuActive,#u176.MuseMenuActive
-{
-	margin: 0px;
 }
 
 #u178-4
 {
-	width: 74px;
+	width: 98px;
 	min-height: 17px;
 	margin-right: -10000px;
 	top: 8px;
 }
 
-#u181.MuseMenuActive #u182-4,#u176.MuseMenuActive #u178-4
+#u195
+{
+	width: 98px;
+	min-height: 34px;
+	margin-right: -10000px;
+	left: 200px;
+}
+
+#u196
+{
+	width: 98px;
+	padding-bottom: 17px;
+}
+
+#u181.MuseMenuActive,#u176.MuseMenuActive,#u196.MuseMenuActive
+{
+	margin: 0px;
+}
+
+#u199-4
+{
+	width: 98px;
+	min-height: 17px;
+	margin-right: -10000px;
+	top: 8px;
+}
+
+#u181.MuseMenuActive #u182-4,#u176.MuseMenuActive #u178-4,#u196.MuseMenuActive #u199-4
 {
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -146,8 +168,8 @@
 #u90-bw
 {
 	z-index: 5;
-	margin-top: 75px;
-	height: 62px;
+	margin-top: 8px;
+	height: 61px;
 }
 
 body
