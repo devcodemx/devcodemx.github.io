@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>DevCode | Servicios</title>
+
+	<!-- Browser Specical Files
+	========================================================================= -->
+	<!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+	<link rel="shortcut icon" href="assets/images/favicon.png" title="Favicon" />
+<!-- Web Fuentes-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!--Css-->	
+	<link rel="stylesheet" href="style.min.css">
+	<link rel="stylesheet" href="assets/css/responsive.min.css">  
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/flexslider.min.css">
+    <link href="bootstrap-carousel/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap-carousel/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/comfortaa.css" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+	<script src="assets/js/modernizr.custom.js"></script>
+	<!-- Browser Specical File-->
+	<!--[if IE 8]><link href="assets/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->   
+	<!-- JavaScript -->
+	<script src="assets/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+
+		function obtenerParametro(sParam){
+			var sPageURL = window.location.search.substring(1);
+			var sURLVariables = sPageURL.split('&');
+			for (var i = 0; i < sURLVariables.length; i++){
+				var sParameterName = sURLVariables[i].split('=');
+				if (sParameterName[0] == sParam){
+					return sParameterName[1];
+				}
+			}
+		}
+		
+		function activaTab(tab){
+			$('.nav-tabs a[href="#' + tab + '"]').tab('show');
+		}
+
+        $(document).ready(function() {      
+            $(document).on('click',function(){
+				$('.collapse .navbar-toggle').collapse('hide');
+			});
+
+            var actTab = obtenerParametro('act');
+            console.log(actTab);
+            if(actTab == 2){
+            	activaTab('moviles');
+            }else if(actTab == 3){
+            	activaTab('sistemas');
+            }else{
+            	activaTab('web');
+            }
+
+        });
+	</script>    
+</head>
+
+<body data-page="index" data-spy="scroll">
+<div id="page" class="hfeed site">
+	<header id="header">
+		<div class="container">
+			<div class="logo-fix left logo-responsivo">
+				<a class="logo" href="index.html">
+					<img title="DevCode" alt="DevCode" src="assets/images/logo.png">
+				</a>
+		    </div>
+<div id="menu-responsivo">            
+    <div class="mainmenu right">
+		 <nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+					</button>
+			</div>			
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            	<div class="cbp-af-inner">                                            
+                  <nav>
+					<ul class="nav navbar-nav">
+							<li>
+									<a href="index.html">INICIO</a>
+							</li>							
+							<li>
+									<a href="servicios.php" style="color:#fff">SERVICIOS</a>
+							</li>
+							<li>
+									<a href="index.html#nosotros">NOSOTROS</a>
+							</li>							
+							<li>
+									<a href="index.html#portafolio">PORTAFOLIO</a>
+							</li>
+							<li>
+									<a href="index.html#contacto">CONTACTO</a>
+							</li>
+							<li>
+									<a href="#"><i class="fa fa-search"></i></a>
+							</li>                                                        
+					</ul>
+                  </nav>
+			</div> 
+         </div>   
+			<!-- /.navbar-collapse -->
+		 </nav>         
+    </div>
+ </div><!--menu-->
+ 
+ <div id="menu-escritorio">            
+    <div class="mainmenu right">
+		 <nav class="navbar navbar-default" role="navigation">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse cbp-af-header">
+            	<div class="cbp-af-inner">
+                    <div class="logo-fix left">
+						<a class="logo" href="index.html">
+							<img title="DevCode" alt="DevCode" src="assets/images/logo.png">
+						</a>
+		    		</div>                                             
+                  <nav>
+					<ul class="nav navbar-nav">
+							<li>
+									<a class="page-scroll" href="index.html">INICIO</a>
+							</li>							
+							<li>
+									<a class="page-scroll" href="servicios.php" style="color:#fff">SERVICIOS</a>
+							</li>
+							<li>
+									<a class="page-scroll" href="index.html#nosotros">NOSOTROS</a>
+							</li>							
+							<li>
+									<a class="page-scroll" href="index.html#portafolio">PORTAFOLIO</a>
+							</li>
+							<li>
+									<a class="page-scroll" href="index.html#contacto">CONTACTO</a>
+							</li>
+							<li>
+									<a href="#"><i class="fa fa-search"></i></a>							                                       
+                                <form name="buscador" action="#" method="POST" class="buscador">
+										<input type="search" name="busqueda" placeholder="Buscar"><br />
+									</form>
+							</li>                                                        
+					</ul>
+                  </nav>
+			</div> 
+          </div>  
+			<!-- /.navbar-collapse -->
+		 </nav>        
+    </div>
+ </div><!--menu-->
+</div>
+</header><!-- #header -->
+	<section id="inicio" class="about-section">
+		<div class="home_slide-wrap">
+			<div class="">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li class="" data-target="#myCarousel" data-slide-to="1"></li>
+        <li class="" data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="flecha">
+      		<a href="#servicios-contenido" class="page-scroll"><img src="assets/images/flecha.png" alt=""></a>
+      </div>
+      <div class="carousel-inner" role="listbox">
+		<div class="item slider-tres active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Servicios</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget 
+quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor 
+id nibh ultricies vehicula ut id elit.</p>
+				<p>&nbsp;</p>
+              <p><a class="btn btn-lg btn-primary" href="servicios.php" role="button">Conoce más de nosotros</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item slider-uno">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>La tecnología, a tu alcance</h1>
+              <p>Aliquam quis blandit sem. Sed at condimentum risus. Praesent tristique velit a quam ultrices semper. Duis consectetur diam non nisl malesuada tempor.</p>
+              <p>&nbsp;</p>
+              <p><a class="btn btn-lg btn-primary" href="index.html" role="button">Conoce más de nosotros</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item slider-dos">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Portafolio</h1>
+              <p>Aliquam quis blandit sem. Sed at condimentum risus. Praesent tristique velit a quam ultrices semper. Duis consectetur diam non nisl malesuada tempor.</p>
+              <p>&nbsp;</p>
+              <p><a class="btn btn-lg btn-primary" href="portafolio.html" role="button">Conoce más de nosotros</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previo</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div><!-- /.carousel -->                
+	</div><!-- Termina .container-->
+			<div class="blackbottom">
+			</div>
+		</div><!-- termina .home_slide-wrap-->
+    </section><!--inicio--> 
+    
+        <div id="servicios-contenido" style="top:-160px;position:relative;"></div>
+        <div class="section-info" style="margin-top:-40px;">
+        	<div class="container">
+                <p>Vestibulum mattis, ipsum vitae convallis tincidunt, mi quam iaculis velit, nec bibendum nulla nunc sed lorem. Aenean at urna eget risus tristique aliquet non a massa. Sed et pretium sapien, vitae pharetra lacus. Vestibulum mattis, ipsum vitae convallis tincidunt, mi quam iaculis velit, nec bibendum nulla nunc sed lorem. Aenean at urna eget risus tristique aliquet non a massa. Sed et pretium sapien, vitae pharetra lacus.</p>
+        	</div>
+        </div> 
+	<div id="servicios-pestanas" style="top:-60px;position:relative;"></div>
+     	<div role="tabpanel" class="container">
+                <div class="tabs-fondo-naranja"></div>
+  			<!-- Nav tabs -->
+  			<ul class="nav nav-tabs nav-justified" role="tablist">
+    			<li role="presentation" id="presentation1" ><a href="#web" aria-controls="web" role="tab" data-toggle="tab">desarrollo de sistemas web empresariales</a></li>
+    			<li role="presentation" id="presentation2" ><a href="#moviles" aria-controls="moviles" role="tab" data-toggle="tab">desarrollo de aplicaciones móviles</a></li>
+    			<li role="presentation" id="presentation3" ><a href="#sistemas" aria-controls="sistemas" role="tab" data-toggle="tab">integración de<br />sistemas</a></li>
+  			</ul>
+		  <!-- Tab panes -->
+  			<div class="tab-content">    			
+              <div role="tabpanel" class="tab-pane serv-tab" id="web">
+                 <div class="col-lg-4 col-md-4 col-sm-4">
+                 <div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+								<img src="assets/images/web.png" alt="" class="hexa-serv"/>
+							</div> 		
+                 </div>
+                 <div class="col-lg-8 col-md-8 col-sm-8 quinientos">
+                 <p></p>
+                 <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam. Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam.</p>
+                 <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in.</p>
+                 <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in.</p>
+                 </div>
+              </div> 			
+                <div role="tabpanel" class="tab-pane serv-tab" id="moviles">
+                	<div class="col-lg-4 col-md-4 col-sm-4">
+                 			<div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+								<img src="assets/images/moviles.png" alt="" class="hexa-serv"/>
+							</div>
+                    </div>         	
+                 <div class="col-lg-8 col-md-8 col-sm-8 quinientos">
+                 	<p></p>                    
+                 <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in.</p>
+                 	<p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam. Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam.</p>
+                 <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in.</p>
+                 	</div>
+                </div> 			
+                <div role="tabpanel" class="tab-pane serv-tab" id="sistemas">
+                	<div class="col-lg-4 col-md-4 col-sm-4">
+                 			<div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+								<img src="assets/images/sistemas.png" alt="" class="hexa-serv"/>
+							</div>             	    
+                  </div>
+                 <div class="col-lg-8 col-md-8 col-sm-8 quinientos">
+                 	<p></p>
+                 	<p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam. Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam.</p>
+                 <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in.</p>
+                 	</div>                
+                </div>
+  			</div>
+		</div><!--tab panel-->        
+<div id="contacto-portafolio" style="top:-60px;position:relative;"></div>
+		<div class="section-info contacto-portafolio">
+			<h1 class="section-title" style="background:none;">¿Necesitas un presupuesto?</h1>
+            <p>&nbsp;</p>
+			<a href="index.html#contacto" class="btn-portafolio">¡CONTÁCTANOS!</a>	
+        </div>                   
+<footer id="footer">
+		<div class="container">
+			<div class="menu-footer">
+					<a class="page-scroll" href="index.html" >INICIO</a>
+					<a class="page-scroll" href="servicios.php" >SERVICIOS</a>
+					<a class="page-scroll" href="index.html#nosotros">NOSOTROS</a>
+					<a class="page-scroll" href="index.html#portafolio">PORTAFOLIO</a>
+					<a class="page-scroll" href="index.html#contacto">CONTACTO</a>
+                    <p></p>
+                    <h4>www.devcode.mx - Copyright 2015</h4>
+			</div>
+		</div>
+	</footer><!--#footer-->          
+</div><!-- #page -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <!-- jquery.flexslider -->  
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <!-- Portfolio -->
+    <script src="assets/js/isotope.js"></script>
+		<!-- animate -->
+    <script src="assets/js/viewportchecker.js"></script>		
+		<!-- circle-progress -->
+    <script src="assets/js/circle-progress.js"></script>
+		<!-- Custom javascript -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+	<script src="assets/js/cbpAnimatedHeader.min.js"></script>
+    
+
+</body>
+</html>

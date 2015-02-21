@@ -1,0 +1,547 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>DevCode | La tecnología a tu alcance</title>
+
+	<!-- Browser Specical Files
+	========================================================================= -->
+	<!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<!-- Icono Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.png" title="Favicon" />
+        
+	<!-- Hojas de estilo-->
+<!-- Web Fuentes  -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!-- Css  -->	
+	<link rel="stylesheet" href="style.min.css">
+	<link rel="stylesheet" href="assets/css/responsive.min.css">  
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/flexslider.min.css">
+    <link href="bootstrap-carousel/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap-carousel/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/comfortaa.css" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+	<script src="assets/js/modernizr.custom.js"></script>
+
+	<!-- Browser Specical File-->
+	<!--[if IE 8]><link href="assets/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->   
+	<!-- JavaScript -->
+	<script src="assets/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {      
+            $(document).on('click',function(){
+				if($('.collapse').hasClass("in")){
+				$('.collapse').collapse('hide');
+				}
+			})
+        });
+	</script>
+    
+</head>
+
+<body data-page="index" data-spy="scroll">
+<div id="page" class="hfeed site">
+	<header id="header">
+		<div class="container">
+			<div class="logo-fix left logo-responsivo">
+				<a class="logo" href="index.html">
+					<img title="DevCode" alt="DevCode" src="assets/images/logo.png">
+				</a>
+		    </div>
+            
+<div id="menu-responsivo">            
+    <div class="mainmenu right">
+		 <nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+					</button>
+			</div>			
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            	<div class="cbp-af-inner">                                            
+                  <nav>
+					<ul class="nav navbar-nav">
+							<li>
+									<a class="page-scroll" href="#inicio">INICIO</a>
+							</li>							
+							<li>
+									<a class="page-scroll" href="#servicios">SERVICIOS</a>
+							</li>
+							<li>
+									<a class="page-scroll" href="#nosotros">NOSOTROS</a>
+							</li>							
+							<li>
+									<a class="page-scroll" href="#portafolio">PORTAFOLIO</a>
+							</li>
+							<li>
+									<a class="page-scroll" href="#contacto">CONTACTO</a>
+							</li>
+							<li>
+									<a class="page-scroll" href="#"><i class="fa fa-search"></i></a>
+							</li>                                                        
+					</ul>
+                  </nav>
+              </div>    
+			</div>    
+			<!-- /.navbar-collapse -->
+		 </nav>
+    </div>
+ </div><!--menu-->
+
+ <div id="menu-escritorio">            
+    <div class="mainmenu right">
+		 <nav class="navbar navbar-default" role="navigation">			
+            <div class="collapse navbar-collapse navbar-ex1-collapse cbp-af-header">
+            	<div class="cbp-af-inner">
+                    <div class="logo-fix left">
+						<a class="logo" href="index.html">
+							<img title="DevCode" alt="DevCode" src="assets/images/logo.png">
+						</a>
+		    		</div>                                             
+                  <nav>
+					<ul class="nav navbar-nav">
+							<li>
+									<a class="page-scroll" href="#inicio">INICIO</a>
+							</li>							
+							<li>
+									<a class="page-scroll" href="#servicios">SERVICIOS</a>
+							</li>
+							<li>
+									<a class="page-scroll" href="#nosotros">NOSOTROS</a>
+							</li>							
+							<li>
+									<a class="page-scroll" href="#portafolio">PORTAFOLIO</a>
+							</li>
+							<li>
+									<a class="page-scroll" href="#contacto">CONTACTO</a>
+							</li>
+							<li>
+									<a href="#"><i class="fa fa-search"></i></a>							                                       
+                                <form name="buscador" action="#" method="POST" class="buscador">
+										<input type="search" name="busqueda" placeholder="Buscar"><br />
+									</form>
+                         </li>                                                        
+					</ul>
+                  </nav>
+              </div>    
+			</div>           
+			<!-- /.navbar-collapse -->
+		 </nav>
+    </div>
+ </div><!--menu-->
+</div>
+</header><!-- #header -->
+	
+  <section id="inicio" class="about-section">
+		<div class="home_slide-wrap">
+			<div class="">
+                       
+                <!-- Carousel-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li class="" data-target="#myCarousel" data-slide-to="1"></li>
+        <li class="" data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="flecha">
+      		<a href="#servicios" class="page-scroll">
+            <img src="assets/images/flecha.png" alt=""></a>
+      </div>
+      <div class="carousel-inner" role="listbox">
+        <div class="item slider-uno active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>La tecnología, a tu alcance</h1>
+              <p>Aliquam quis blandit sem. Sed at condimentum risus. Praesent tristique velit a quam ultrices semper. Duis consectetur diam non nisl malesuada tempor.</p>
+              <p>&nbsp;</p>
+              <p><a class="btn btn-lg btn-primary" href="#servicios" role="button">Conoce más de nosotros</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item slider-dos">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Portafolio</h1>
+              <p>Aliquam quis blandit sem. Sed at condimentum risus. Praesent tristique velit a quam ultrices semper. Duis consectetur diam non nisl malesuada tempor.</p>
+              <p>&nbsp;</p>
+              <p><a class="btn btn-lg btn-primary" href="portafolio.html" role="button">Conoce más de nosotros</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item slider-tres">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Servicios</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget 
+quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor 
+id nibh ultricies vehicula ut id elit.</p>
+				<p>&nbsp;</p>
+              <p><a class="btn btn-lg btn-primary" href="servicios.html" role="button">Conoce más de nosotros</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previo</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div><!-- /.carousel -->
+                
+
+			</div><!-- Termina .container-->
+			<div class="blackbottom">
+			</div>
+		</div><!-- termina .home_slide-wrap-->
+    </section>    
+        <div id="servicios"></div>
+		<div class="section-info" style="margin-top:-40px;">
+			<h1 class="section-title">Servicios</h1>
+			<p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+		</div>
+        	<div class="servicios-bloque container">
+        		<div class="isotope">
+					<div class="element-item">
+						<a href="servicios.html?act=1#servicios-pestanas">
+                        <div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+								<i class="fa fa-sitemap"></i>
+							</div>
+                      </a>      
+                      <h2>DESARROLLO DE SISTEMAS<br />WEB EMPRESARIALES</h2>  
+                      <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl</p>
+                      <h2 class="info-mas"><a href="servicios.html?act=1#servicios-pestanas">MÁS INFORMACIÓN</a></h2>
+					</div>
+					<div class="element-item transition">
+						<div>
+						<a href="servicios.html?act=2#servicios-pestanas">
+                        <div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+								<i class="fa fa-mobile" style="padding:35px 45px;"></i>
+							</div>
+                      </a>      
+                      
+						</div>
+                      <h2>DESARROLLO DE<br />APLICACIONES MÓVILES</h2>  
+                      <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl</p>
+                      <h2 class="info-mas"><a href="servicios.html?act=2#servicios-pestanas">MÁS INFORMACIÓN</a></h2>
+					</div>
+					<div class="element-item transition metal">
+						<div>
+						<a href="servicios.html?act=3#servicios-pestanas">
+                        <div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+								<i class="fa fa-cogs"></i>
+							</div>
+                      </a>                            
+						</div>
+                      <h2>INTEGRACIÓN<br />SISTEMAS</h2>  
+                      <p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl</p>
+                      <h2 class="info-mas"><a href="servicios.html?act=3#servicios-pestanas">MÁS INFORMACIÓN</a></h2>
+					</div>
+				</div>
+        	</div>
+           
+		<div class="section-info clientes-bloque" style="margin-bottom:0px;">
+			<h1 class="section-title">Nuestros clientes hablan por nosotros...</h1>
+			<p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+        	<div class="container">
+        		<div class="testimoniales">
+                	<div class="foto-cliente">
+                    <div class="team-item fade">
+							<div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+									<img src="assets/images/personaje.jpg" alt="team" style="margin-top:5px;margin-left:7px;">
+							</div>
+						</div>
+                  </div>     
+                    <div class="texto-cliente">
+                    	<p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam.</p>
+                        <p><strong>Matt Brown</strong><br />
+                        <em>Co-fundador - <span>Marketplaceapp.com</span></em></p>
+                    </div>
+                </div>
+                <div class="testimoniales">
+                	<div class="foto-cliente">
+                    	<div class="team-item fade">
+							<div class="hexagon-mask">
+								<span class="mask"></span>
+								<span class="mask-bg"></span>
+									<img src="assets/images/personaje.jpg" alt="team" style="margin-top:5px;margin-left:7px;">
+							</div>
+                       </div>     
+                    </div>
+                    <div class="texto-cliente">
+                    	<p>Proin malesuada in lacus ultricies lacinia. Nunc elit ipsum, aliquam a faucibus nec, pharetra a erat. Cras imperdiet nisl consequat est at vehicula sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam euismod eleifend nibh, ac sollicitudin lorem aliquet in. Mauris cursus blandit pretium. Praesent nisl nunc, maximus at posuere in, sodales eu diam.</p>
+                        <p><strong>Matt Brown</strong><br />
+                        <em>Co-fundador - <span>Marketplaceapp.com</span></em></p>
+                    </div>
+                </div>
+        	</div> 
+          </div><!--clientes-bloque--> 
+        
+        <div id="nosotros"></div>
+			<div class="section-info nosotros-bloque">
+			<h1 class="section-title" style="padding-top:40px;">Nosotros</h1>
+			<p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+        	<div class="container">
+        		<div class="col-lg-6 col-md-6 col-sm-6 fade">
+                	<h3>DevCode</h3>
+                    <p>Surge del concepto del desarrollo de sistemas en sus diferentes plataformas tecnológicas por medio de la programación de Sistemas, donde el nombre DevCode viene del juego de letras de “Developers Code” que es “Desarrolladores de Código”.</p>
+                    <h3>Codificando tu vida</h3>
+                    <p>Codificando tu vida refleja el propósito de la empresa, que es poner al alcance de las personas o empresas, aplicaciones y sistemas desarrollados en los diferentes lenguajes programación que están basados en un alto grado de codificación.</p>
+                    <h3>Misión</h3>
+                    <p>Desarrollar soluciones tecnológicas de innovación, basadas en estándares y mejores prácticas, que aporten al crecimiento y consolidación de las estrategias de negocio de nuestros aliados comerciales, por medio del desarrollo de aplicaciones y sistemas  que superen  las expectativas y necesidades de los diferentes tipos de clientes..</p>                    
+                </div>                
+                <div class="col-lg-6 col-md-6 col-sm-6 fade">
+                	<h3>Visión</h3>
+                    <p>Ser líder en el sector de desarrollo de sistemas moviles para las diferentes plataformas tecnológicas.</p>
+<p>Estar entre las 10 mejores empresas mexicanas en el desarrollo de aplicaciones móviles para el 2030 ser la empresa mexicana de desarrollo de aplicaciones moviles líder en México.</p>
+<p>Estar entre las 20 mejores empresas de consultoría y desarrollo de software de México.</p>
+                    <h3>Valores y/o principios</h3>
+                    <ul>
+                    	<li>Vanguardia</li>
+                        <li>Innovación</li>
+                        <li>Compromiso</li>
+                        <li>Trabajo en Equipo</li>
+                        <li>Audacia</li>
+                    </ul>                    
+                </div>
+        	</div> 
+          </div><!--nosotros-bloque-->   
+          
+<div id="portafolio"></div>
+		<div class="section-info">
+			<h1 class="section-title">Portafolio</h1>
+			<p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+		</div>
+				<div class="container portafolio-slide fade">
+					<div class="services_slide">
+						<ul class="slides">
+							<li>                            
+                            <div class="slide-item">
+                            		<a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port01.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div></a>
+                                
+                                <a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port02.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div>
+                                </a>
+                                
+                        	       <a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port03.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div>
+                                </a>
+                                
+                                <a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port04.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div>
+                                </a> 
+                            </div>
+							</li>  
+                          <li>                            
+                            <div class="slide-item">
+                            		<a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port01.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div></a>
+                                
+                                <a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port02.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div>
+                                </a>
+                                
+                        	       <a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port03.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div>
+                                </a>
+                                
+                                <a href="portafolio.html">
+                                <div class="elemento-portafolio">
+                                    <img src="assets/images/port04.jpg" alt="" />
+                                    <div class="hover-naranja">
+                                    	<i class="fa fa-search"></i>
+                                    	<p>Título <span>Subtítulo</span></p>
+                                    </div>
+                                </div>
+                                </a> 
+                            </div>
+							</li>  			                                
+						</ul>
+					</div>
+				</div><!-- END .container-->
+            
+<div id="marcas" style="top:-60px;position:relative;"></div>
+		<div class="section-info marcas-bloque" style="margin-top:30px;">
+			<h1 class="section-title">Confian en nostros</h1>
+			<p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+            <p>&nbsp;</p>
+        	<div class="container">
+            
+			<div class="col-lg-3 col-md-3 col-sm-3 fade">
+            	<img src="assets/images/logo_4.png" alt="logo_4" />
+            </div> 
+            <div class="col-lg-3 col-md-3 col-sm-3 fade">
+            	<img src="assets/images/logo_3.png" alt="logo_3" />
+            </div> 
+            <div class="col-lg-3 col-md-3 col-sm-3 fade">
+            	<img src="assets/images/logo_2.png" alt="logo_2" />
+            </div> 
+            <div class="col-lg-3 col-md-3 col-sm-3 fade">
+            	<img src="assets/images/logo_1.png" alt="logo_1" />
+            </div>            
+            <div style="clear:both;"></div>
+            <p>&nbsp;</p>
+            <p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.<br />
+            Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+        	</div> 
+          </div><!--clientes-bloque-->            
+
+<div id="contacto"></div>
+		<div class="section-info contacto-bloque">
+			<h1 class="section-title">Contáctanos</h1>
+			<p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+		</div>
+        <div class="container">
+			<div id="contact-wrap">
+				<div id="contact-info" class="col-lg-6 col-md-6 col-sm-6">
+					<div id="contact-info-wrap">                 
+                   		 <div class="col-lg-6 col-md-6col-sm-6">
+                         	<h4 class="title">Información de Contacto</h4><br />
+                            <p>Suspendisse lacus tortor, sagittis at nulla eu, laoreet molestie lacus. Praesent et lobortis nulla, at hendrerit quam. Etiam id nulla rutrum, aliquet<br />eros ut, viverra erat. Etiam sed mollis justo.</p>
+                         </div>
+                   		 
+                         <div class="col-lg-6 col-md-6 col-sm-6">
+                         		<div class="icono-bloque"><i class="fa fa-building edificio"></i></div>
+                             <div class="parrafo-bloque"><p>Paseo de la Reforma 300 Piso 17 Col. Juárez, Del. Cuauhtémoc C.P. 06600, México D.F.</p></div>
+                            <div class="icono-bloque"><i class="fa fa-phone"></i></div>
+                            <div class="parrafo-bloque"><p>55 3176 2708 y 55 1948 6368</p></div>
+                            <div class="icono-bloque"><i class="fa fa-envelope"></i></div>
+                            <div class="parrafo-bloque"><p>contacto@devcode.mx</p></div>
+                         </div>  
+                         
+                          <div style="width:100%;clear:both;">
+                         	<h4 class="title" style="margin-bottom:12px;">¡Síguenos!</h4>
+                            <div class="redes"><a href="" target="_blank"><i class="fa fa-vine"></i></a></div>
+                            <div class="redes"><a href="https://twitter.com/devcodemx" target="_blank"><i class="fa fa-twitter"></i></a></div>
+                            <div class="redes"><a href="https://www.facebook.com/Devcodemx" target="_blank"><i class="fa fa-facebook"></i></a></div>
+                            <div class="redes"><a href="" target="_blank"><i class="fa fa-youtube"></i></a></div>
+                            <div class="redes"><a href="https://plus.google.com/104602660020024086262" target="_blank"><i class="fa fa-google-plus"></i></a></div>  
+                         </div>            					
+                    </div>
+				</div>
+                <div id="contact-form" class="col-lg-6 col-md-6 col-sm-6">
+					<form class="form-wrapper" method="post" role="form" novalidate>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="form-group">
+									<input type="text" id="name" name="name" class="form-control" data-errmsg="Nombre requerido." placeholder="Nombre" required/>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="form-group">
+									<input type="text" id="email" name="email" class="form-control" data-errmsg="Email es requerido." placeholder="Email" required/>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="form-group">
+									<input type="text" id="website" name="website" class="form-control" placeholder="Asunto"/>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 message-contact">
+								<div class="form-group">
+									<textarea id="message" name="message" class="form-control" data-errmsg="Mensaje es requerido." placeholder="Mensaje" rows="7" required></textarea>
+									<input type="submit" value="Enviar Mensaje" class="btn btn-lg" />
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!--termina .container--> 
+<footer id="footer">
+		<div class="container">
+			<div class="menu-footer">
+					<a class="page-scroll" href="#inicio" >INICIO</a>
+					<a class="page-scroll" href="#servicios" >SERVICIOS</a>
+					<a class="page-scroll" href="#nosotros">NOSOTROS</a>
+					<a class="page-scroll" href="#portafolio">PORTAFOLIO</a>
+					<a class="page-scroll" href="#contacto" >CONTACTO</a>
+                    <p></p>
+                    <h4>www.devcode.mx - Copyright 2015</h4>
+			</div>
+		</div>
+	</footer><!-- #footer -->                                   
+ 
+</div><!-- #page -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <!-- jquery.flexslider -->  
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <!-- Portfolio -->
+    <script src="assets/js/isotope.js"></script>
+		<!-- animate -->
+    <script src="assets/js/viewportchecker.js"></script>		
+		<!-- circle-progress -->
+    <script src="assets/js/circle-progress.js"></script>
+		<!-- Custom javascript -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+	<script src="assets/js/cbpAnimatedHeader.min.js"></script>
+</body>
+</html>
